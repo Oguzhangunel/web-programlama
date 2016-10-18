@@ -1,4 +1,4 @@
-﻿<html>
+<html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Form 1</title>
@@ -12,7 +12,7 @@
 
 <TR>
   
-<form action="index.php" method="GET">
+<form action="http://halicders.mediatriple.net/form.php" method="GET">
  <TH><font color="black">İsim:</font><input type="text" name="isim"></TH>
 
  <TH><font color="black">Şifre:</font><input type="password" name="sifre"></TH>
@@ -23,9 +23,9 @@
 
 <TR>
 
- <TD><? php if($_GET["isim"]!=NULL){ echo isim:$_GET["isim"]}; ?><br></TD>
+ <TD><?php echo $_GET["isim"]; ?><br></TD>
 
- <TD><br></TD>
+ <TD><?php echo $_GET["sifre"]; ?><br></TD>
 
  <TD><br></TD>
 
@@ -35,7 +35,7 @@
 
  <TD><br></TD>
 
- <TD><? php if($_GET["sifre"]!=NULL){ echo $_GET["sifre"]}; ?><br></TD>
+ <TD><br></TD>
 
  <TD><br></TD>
 
